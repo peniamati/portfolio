@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1em;
+}
+.intro h1 {
+  width: 100%;
+  text-align: center;
+}
+.intro img {
+  width: 50%;
+  min-width: 300px;
+  max-width: 400px;
+  margin-bottom: 1em;
+}
+.intro p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  border: 1px solid black;
+}
+.intro p:last-of-type {
+  font-size: 1.5em;
+  background-color: wheat;
+}
+
+.projects {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1em;
+}
+.projects h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.projects-project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  border: 1px solid black;
+}
+.projects-project h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.projects-project-description {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 1em;
+}
+.projects-project-img {
+  width: 80%;
+  margin-bottom: 1em;
+  min-width: 300px;
+  max-width: 400px;
+}
+.projects-project-url {
+  margin-bottom: 1em;
+}
+
+/*# sourceMappingURL=styles.css.map */
