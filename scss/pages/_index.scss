@@ -1,63 +1,125 @@
-.intro{
+header{
+  @include contenedor-flex;
+  margin-bottom: 1em;
+  background-color: black;
+  color: white;
+  & h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  & nav{
+    width: 90%;
+    & ul{
+      display: flex;
+      list-style: none;
+      justify-content: space-evenly;
+      & li{
+        display: inline;
+        & a{
+          font-size: 1.5em;
+          text-decoration: none;
+          color: white
+        }
+      }
+    }
+  }
+}
+
+.intro {
   @include contenedor-flex;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 1em;
-  & h1{
-    width: 100%;
-    text-align: center;
-  }
-  & img{
+  & img {
     width: 50%;
     min-width: 300px;
     max-width: 400px;
     margin-bottom: 1em;
   }
-  & p{
+  & p {
     text-align: center;
     font-size: 1.1em;
     margin-bottom: 1em;
     border: 1px solid black;
-    &:last-of-type{
+    &:last-of-type {
       font-size: 1.5em;
       background-color: wheat;
     }
   }
 }
 
-  .projects{
-    margin-left: 10%;
-    margin-right: 10%;
+.projects {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1em;
+  & h2 {
+    width: 100%;
+    text-align: center;
     margin-bottom: 1em;
-    & h2{
+  }
+  &-project {
+    @include contenedor-flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    border: 1px solid black;
+    overflow: hidden;
+    align-content: space-around;
+    & h3 {
       width: 100%;
       text-align: center;
       margin-bottom: 1em;
     }
-    &-project{
-      @include contenedor-flex;
-      justify-content: center;
+    &-description {
+      text-align: center;
+      width: 100%;
+      margin-left: 10%;
+      margin-right: 10%;
       margin-bottom: 1em;
-      border: 1px solid black;
-      & h3{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1em;
-      }
-      &-description{
-        text-align: center;
-        width: 80%;
-        margin-bottom: 1em;
-      }
-      &-img{
-        width: 80%;
-        margin-bottom: 1em;
-        min-width: 300px;
-        max-width: 400px;
-      }
-      &-url{
-        margin-bottom: 1em;
+    }
+    &-img {
+      width: 80%;
+      margin-bottom: 1em;
+      min-width: 300px;
+      max-width: 300px;
+    }
+    &-url {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .intro{
+    @include contenedor-grid;
+    & img{
+      width: 80%;
+      justify-self: center;
+      margin-bottom: 0;
+    }
+    & p{
+      width: 80%;
+      justify-self: center;
+      align-self: center;
+      margin-bottom: 0;
+      &:last-of-type{
+        margin-top: 1em;
+        grid-column: span 2;
+        width: 90%;
+        margin-bottom: 0;
       }
     }
-
   }
+
+  .projects{
+    @include contenedor-grid;
+    & h2{
+      grid-column: span 2;
+    }
+    &-project{
+      width: 90%;
+      justify-self: center;
+    }
+  }
+}

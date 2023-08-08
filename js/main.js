@@ -38,5 +38,39 @@ function getAll(){
       }
     );
   });
+};
 
-}
+document.addEventListener('DOMContentLoaded', function () {
+  const contactForm = document.getElementById('contact-form');
+  const resetButton = document.getElementById('reset-button');
+
+  // Initialize EmailJS with your user ID
+  emailjs.init('user_your_emailjs_user_id');
+
+  contactForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Prepare email parameters
+    const emailParams = {
+      to_email: 'pena_matias@hotmail.com',
+      from_name: contactForm.name.value,
+      from_email: contactForm.email.value,
+      message: contactForm.message.value
+    };
+
+    // Send email using EmailJS
+    emailjs.send('your_emailjs_service_id', 'your_emailjs_template_id', emailParams)
+      .then(function (response) {
+        console.log('Email sent successfully:', response);
+        // Reset the form after successful submission
+        contactForm.reset();
+      })
+      .catch(function (error) {
+        console.error('Email could not be sent:', error);
+      });
+  });
+
+  resetButton.addEventListener('click', function () {
+    contactForm.reset();
+  });
+});
