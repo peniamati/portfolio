@@ -22,8 +22,11 @@ header{
         & a{
           font-size: 1.2rem;
           text-decoration: none;
-          background-color: $background-color;
-          color: $primary-color;
+          color: $background-color;
+          &:hover{
+            background-color: $background-color;
+            color: $primary-color;
+          }
         }
       }
     }

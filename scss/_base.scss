@@ -13,6 +13,10 @@ $heading-font: 'Helvetica Neue', sans-serif;
   font-family: $body-font;
 }
 
+body{
+  background-color: $background-color;
+}
+
 @mixin contenedor-flex($direccion:row, $justify:center, $align:center){
   display: flex;
   flex-direction: $direccion ;

@@ -2,7 +2,6 @@
 
 .intro {
   @include contenedor-flex;
-  background-color: $background-color;
   padding: 2em;
   text-align: center;
   & img {
@@ -26,7 +25,6 @@
 
 // Projects Styles
 .projects {
-  background-color: $background-color;
   padding: 2em;
   & h2 {
     font-family: $heading-font;

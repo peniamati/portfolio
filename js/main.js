@@ -26,11 +26,13 @@ function getAll() {
         let url = document.createElement("a");
         url.className = "projects-project-url";
         url.href = data.url;
-        url.innerHTML = "Link al repositorio";
+        url.innerHTML = "Link to GitHub repository";
+        url.ariaLabel = "Link to GitHub repository";
 
         let img = document.createElement("img");
         img.className = "projects-project-img";
         img.src = data.image;
+        img.alt = "Project image";
 
         article.appendChild(title);
         article.appendChild(img);
