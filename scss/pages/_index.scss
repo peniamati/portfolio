@@ -13,7 +13,7 @@
     font-size: 1.2rem;
     margin-bottom: 1em;
     padding: 1em;
-    border: 1px solid $primary-color;
+    background-color: $background-color;
     &:last-of-type {
       font-size: 1.5rem;
       background-color: $accent-color;
@@ -31,13 +31,13 @@
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1em;
+    color: $background-color;
   }
   &-project {
     text-align: center;
     background-color: white;
     padding: 1em;
     margin-bottom: 1em;
-    border: 1px solid black;
     & h3 {
       font-family: $heading-font;
       font-size: 1.8rem;

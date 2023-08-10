@@ -1,3 +1,9 @@
+h2{
+  text-align: center;
+  color: $background-color;
+  margin-bottom: 1em;
+}
+
 .contact-form {
   width: 80%;
   margin: 0 auto;
@@ -6,6 +12,10 @@
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   color: $background-color;
+  & h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
   form {
     label {
       display: block;
@@ -33,5 +43,18 @@
         background-color: $accent-color;
       }
     }
+  }
+}
+
+@media (min-width: 768px){
+  main{
+    @include contenedor-grid;
+    margin-bottom: 1em;
+    & h2{
+      grid-column: span 2;
+    }
+  }
+  .contact-form{
+    width: 80%;
   }
 }
