@@ -1,5 +1,5 @@
 let url = window.location.href;
-if (url.includes("index.html")) {
+if (!url.includes("contact")) {
   window.onload = getAll;
 }
 

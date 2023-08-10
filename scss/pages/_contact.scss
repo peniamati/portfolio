@@ -22,7 +22,7 @@
     }
     
     button {
-      background-color: $primary-color;
+      background-color: $background-color;
       color: white;
       padding: 10px 20px;
       border: none;
@@ -30,7 +30,7 @@
       cursor: pointer;
       
       &:hover {
-        background-color: $secondary-color;
+        background-color: $accent-color;
       }
     }
   }

@@ -1,15 +1,16 @@
-$f-family: Calibri, Arial, Helvetica, sans-serif;
-$primary-color: #3498db;
-$secondary-color: #e74c3c;
+// Color palette
+$primary-color: #333;
+$accent-color: #ff9900;
+$background-color: #f5f5f5;
+
+// Font styles
+$body-font: Arial, sans-serif;
+$heading-font: 'Helvetica Neue', sans-serif;
 
 * {
   margin: 0;
   padding: 0;
-  font-family: $f-family;
-}
-
-body{
-  background-color: aquamarine;
+  font-family: $body-font;
 }
 
 @mixin contenedor-flex($direccion:row, $justify:center, $align:center){
