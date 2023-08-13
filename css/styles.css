@@ -121,6 +121,8 @@ footer p {
     margin-bottom: 0;
   }
   .whatsapp a {
+    display: flex;
+    align-items: center;
     font-size: 0.9em;
     padding: 1em 1em 1em 1em;
     border-radius: 2em;
@@ -198,16 +200,21 @@ footer p {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     padding-bottom: 0;
+    grid-column: span 2;
   }
   .intro img {
+    width: 90%;
     justify-self: center;
   }
   .intro p {
+    width: 90%;
     height: fit-content;
     align-self: center;
+    margin-bottom: 0;
   }
   .intro p:last-of-type {
-    text-align: center;
+    width: 95%;
+    justify-self: center;
     grid-column: span 2;
   }
   .projects {
@@ -215,6 +222,7 @@ footer p {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     padding-bottom: 0;
+    grid-column: span 2;
   }
   .projects h2 {
     grid-column: span 2;
